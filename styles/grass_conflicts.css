@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #343434;
+  color: #fff;
+}
+
+:root {
+  --yellow-color: rgb(255, 206, 11);
+  --gold-color: rgb(255, 157, 0);
+  --aqua-color: rgb(3, 181, 252);
+}
+
+
+.container {
+  padding: 10px 10%;
+}
+
+
+.header h1 {
+  font-size: 80px;
+  margin-bottom: 50px;
+}
+
+
+.header video {
+  border: 3px solid var(--yellow-color);
+  margin: auto;
+  width: 50%;
+  display: block;
+}
+.header h1 {
+  text-align: center;
+}
+.explanation video {
+  margin: auto;
+  width: 80%;
+  display: block;
+}
+
+.video-with-text video {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.video-with-text p {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 300p;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 28px;
+}
+a {
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
+
+.header {
+  margin-bottom: 75px;
+}
+
+.explanation {
+  padding: 10px 30%;
+  margin-bottom: 40px;
+}
+
+.code {
+  margin-top: 70px;
+}
+
+.code h2 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.archived-warning {
+  color: var(--yellow-color);
+  margin-bottom: 15px;
+}
+
+.github {
+  padding: 10px 30%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.github h2 {
+  font-size: 30px;  
+  margin-bottom: 15px;
+}
+.github a {
+  display: block;
+  font-size: 50px;  
+  transition: transform 0.25s;
+}
+.github a:hover {
+  transform: translateY(-6px);
+}

@@ -5,155 +5,195 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gameoholic's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/index.css">
     <script src="https://kit.fontawesome.com/793b2a4346.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
 
   <body>
-    <div id="header">
+    <div id="home">
       <div class="container">
 
         <nav>
-          <img src="images/logo.png" alt="Logo" class="logo">
-          <ul id="sidemenu">
-            <li><i class="fas fa-times" id="close-sidemenu"></i></li>
-            <li><a href="#header">Home</a></li>
+          <ul id="nav-menu">
+            <li><i class="fas fa-times" id="close-nav-menu"></i></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-          <i class="fas fa-bars" id="open-sidemenu"></i>
+          <i class="fas fa-bars" id="open-nav-menu"></i>
         </nav>
 
-        <div class="header-text">
-          <p>Developer</p>
-          <h1>Hi, I'm <span>Daniel</span></h1>
+        <div id="home-text">
+          <h1>Hi, I'm <span>Gameoholic</span></h1>
+          <div id="social-icons">
+            <a href=""><i class="fa-brands fa-twitter" id="twitter"></id></i></a>
+            <a href=""><i class="fa-brands fa-github" id="github"></i></a>
+            <a href=""><i class="fa-brands fa-discord" id="discord"></i></a>
+          </div>
         </div>
       </div>
     </div>
 
 
-    <!-- --------about--------- -->
+    <!-- -------- about --------- -->
     <div id="about">
       <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/user.png" alt="User">
-          </div>
+        <div id="video-container">
+          <video id="about-video" width="100%" height="100%" controls autoplay muted loop>
+            <source src="videos/showcase_video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </div>
 
-          <div class="about-col-2">
-            <h1 class="subtitle">About Me</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam placerat turpis ut justo vestibulum semper. Praesent et vulputate tellus. Etiam non erat justo. Phasellus ultricies magna non nulla dignissim, sed rhoncus tortor pulvinar. Suspendisse tempor diam in mi hendrerit, quis fermentum massa aliquam. Vivamus nec tortor sed ante vestibulum egestas. Aenean tempor neque eros, sit amet pretium orci iaculis quis. Mauris blandit ut est a pulvinar. Proin porttitor urna volutpat nisl malesuada, ut congue massa sagittis.</p>
+        <h1 class="subtitle">About Me</h1>
+        <p>I'm a 17 year old developer currently focused on creating Minecraft plugins.</p>
 
-            <div id="tab-titles">
-              <p class="tab-title active-tab" id="skills-tab-title">Skills</p>
-              <p class="tab-title" id="experience-tab-title">Experience</p>
-              <p class="tab-title" id="education-tab-title">Education</p>
-            </div>
+        <div id="tab-titles">
+          <p class="tab-title active-tab" id="skills-tab-title">Skills</p>
+          <p class="tab-title" id="experience-tab-title">Experience</p>
+          <p class="tab-title" id="hobbies-tab-title">Hobbies</p>
+        </div>
 
-            <div class="tab-content active-tab" id="skills-tab-content">
-              <ul>
-                <li><span>code</span><br>i ca nrp ogfr program and code and it work sometime</li>
-                <li><span>asas</span><br>asdasd. I am great at that.</li>
-                <li><span>asdasd</span><br>I asdas at least 5 times a day.</li>
-              </ul>
-            </div>
+        <div class="tab-content active-tab" id="skills-tab-content">
+          <ul>
+            <li>
+              <h1>Minecraft</h1>
+              I have experience with writing Paper/Spigot plugins, and have a good understanding of the Bukkit API and working with packets.
+            </li>
+            <li>
+              <h1>Programming languages</h1>
+              I have experience with JVM languages like Java and Kotlin, as well as C#, Python, and other languages.<br>I have worked with MySQL and MariaDB in the past.
+            </li>
+          </ul>
+        </div>
 
-            <div class="tab-content" id="experience-tab-content">
-              <ul>
-                <li><span>DSA 2</span><br>Designing Websited intercaces</li>
-                <li><span>asdasd2</span><br>asdasding. I am great at that.</li>
-                <li><span>Pasdsding 2</span><br>Iasdss at least 5 times a day.</li>
-              </ul>
-            </div>
+        <div class="tab-content" id="experience-tab-content">
+          <ul>
+            <li>
+              <h1>TopStrix</h1>
+              July 2023 - November 2023
+              <br><br>I've worked for TopStrix, a medium-sized network with hundreds of thousands of unique players, writing plugins and patching existing ones.
+            </li>
+          </ul>
+        </div>
 
-            <div class="tab-content" id="education-tab-content">
-              <ul>
-                <li><span>code</span><br>i ca nrp ogfr program and code and it work sometime</li>
-                <li><span>Sasdng 3</span><br>Shasdading. I am great at that.</li>
-                <li><span>Piasding 3</span><br>Iasdss at least 5 times a day.</li>
-              </ul>
-            </div>
-
-          </div>
+        <div class="tab-content" id="hobbies-tab-content">
+          <ul>
+            <li>
+              <h1>Hobbies</h1>
+              Besides writing code, I have a lot of things I like to do in my free time.
+              <br>I play the piano, watch Anime, and draw!
+              <br>My favorite anime is Attack on Titan, feel free to message me about it :p
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
-    <!-- -----------------------services---------------------- -->
-    <div id="services">
+
+    <!-- ---------------------------- portfolio ------------------- -->
+    <div id="projects">
       <div class="container">
-        <h1 class="subtitle">Services</h1>
-        <div class="services-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Web Design</h2>
-            <p>Description for web quis fermentum massa aliquam. Vivamus nec tortor sed ante vestibulum egestas. Aenean tempor neque eros, sit amet pretium orci iaculis quis. Mauris blandit ut est a pulvinar. Proin porttitor urna volutpat nisl malesuada, ut congue massa sagittis.</p>
-            <a href="#">Learn more</a>
-          </div>
+        <div class="subtitle">My Projects</div>
+          <div id="project-list">
 
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>UI Design</h2>
-            <p>Description for web quis fermentum massa aliquam. Vivamus nec tortor sed ante vestibulum egestas. Aenean tempor neque eros, sit amet pretium orci iaculis quis. Mauris blandit ut est a pulvinar. Proin porttitor urna volutpat nisl malesuada, ut congue massa sagittis.</p>
-            <a href="#">Learn more</a>
-          </div>
-
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Three Design</h2>
-            <p>Description for web quis fermentum massa aliquam. Vivamus nec tortor sed ante vestibulum egestas. Aenean tempor neque eros, sit amet pretium orci iaculis quis. Mauris blandit ut est a pulvinar. Proin porttitor urna volutpat nisl malesuada, ut congue massa sagittis.</p>
-            <a href="#">Learn more</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ----------------------------portfolio------------------- -->
-    <div id="portfolio">
-      <div class="container">
-        <div class="subtitle">My Work</div>
-          <div class="work-list">
-            <div class="work">
-              <img src="images/work-1.png">
-              <div class="layer">
-                <h3>test</h3>
-                <p>Testtttttttttttttttttttttt</p>
-                <a href="#"><i class="fa-solid fa-code"></i></a>
+            <div id="twitch-rewards" class="project github archived">
+              <img src="images/portfolio_images/Test3.png">
+              <div class="project-info-layer">
+                <h1>Twitch Rewards</h1>
+                <p>A Spigot plugin designed for streamers who want to engage their audience.<br>It allows you to create custom channel redeems that affect you in-game, using the Twitch API.<br>It's easy and customizable.</p>
+                <h2>Click to read more about it.</h2>
               </div>
             </div>
-            <div class="work">
-              <img src="images/work-2.png">
-              <div class="layer">
-                <h3>test</h3>
-                <p>Testtttttttttttttttttttttt</p>
-                <a href="#"><i class="fa-solid fa-code"></i></a>
+
+            <div class="project github archived minigame">
+              <img src="images/portfolio_images/GrassConflicts.png">
+              <div class="project-info-layer">
+                <h1>Grass Conflicts</h1>
+                <p>A Minecraft minigame based on Mineplex's Turf Wars, but... with a couple twists.<br>I challenged myself to write it under a week and make it as fun as possible with custom items. (It has guns)<br>It uses the FAWE API and is written in Kotlin.</p>
+                <h2>Click to read more about it.</h2>
               </div>
             </div>
-            <div class="work">
+
+            <div class="project github tool">
+              <img src="images/portfolio_images/Partigon.png">
+              <div class="project-info-layer">
+                <h1>Partigon</h1>
+                <p>A Minecraft particle animation library written in Kotlin, designed to make it easy to create & control complex particle animations, without having to know any math.
+                <h2>Click to read more about it.</h2>
+              </div>
+            </div>
+
+            <div class="project">
               <img src="images/work-3.png">
-              <div class="layer">
+              <div class="project-info-layer">
                 <h3>test</h3>
                 <p>Testtttttttttttttttttttttt</p>
                 <a href="#"><i class="fa-solid fa-code"></i></a>
               </div>
             </div>
+
+            <div class="project">
+              <img src="images/work-3.png">
+              <div class="project-info-layer">
+                <h3>test</h3>
+                <p>Testtttttttttttttttttttttt</p>
+                <a href="#"><i class="fa-solid fa-code"></i></a>
+              </div>
+            </div>
+
+            <div class="project">
+              <img src="images/work-3.png">
+              <div class="project-info-layer">
+                <h3>test</h3>
+                <p>Testtttttttttttttttttttttt</p>
+                <a href="#"><i class="fa-solid fa-code"></i></a>
+              </div>
+            </div>
+
+            <div class="project">
+              <img src="images/work-3.png">
+              <div class="project-info-layer">
+                <h3>test</h3>
+                <p>Testtttttttttttttttttttttt</p>
+                <a href="#"><i class="fa-solid fa-code"></i></a>
+              </div>
+            </div>
+
+            <div class="project">
+              <img src="images/work-3.png">
+              <div class="project-info-layer">
+                <h3>test</h3>
+                <p>Testtttttttttttttttttttttt</p>
+                <a href="#"><i class="fa-solid fa-code"></i></a>
+              </div>
+            </div>
+
+            <div class="project">
+              <img src="images/work-3.png">
+              <div class="project-info-layer">
+                <h3>test</h3>
+                <p>Testtttttttttttttttttttttt</p>
+                <a href="#"><i class="fa-solid fa-code"></i></a>
+              </div>
+            </div>
+
           </div>
-          <a href="#" class="btn">See more</a>
+          <a href="#" id="see-more-button">See more</a>
       </div>
     </div>
 
     <!-- ------------contact-------------- -->
     <div id="contact">
       <div class="container">
-        <div class="row">
+        <div id="row">
           <div class="contact-left">
             <h1 class="subtitle">Contact Me</h1>
             <p>testk@gmail.com</p>
             <p>aaaaaaqa</p>
-            <div class="social-icons">
+            <div class="social-icons2">
               <a href=""><i class="fab fa-facebook"></i></a>
               <a href=""><i class="fab fa-facebook"></i></a>
               <a href=""><i class="fab fa-facebook"></i></a>
@@ -165,4 +205,4 @@
   </body>
 </html>
 
-<script src="script.js"></script>
+<script src="scripts/index.js"></script>

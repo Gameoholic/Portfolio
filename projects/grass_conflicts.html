@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang=""en>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gameoholic's Portfolio</title>
+    <link rel="stylesheet" href="/styles/grass_conflicts.css">
+    <script src="https://kit.fontawesome.com/793b2a4346.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+      <div class="container">
+        <div class="header">
+          <h1>Grass Conflicts</h1>
+
+          <video width="100%" height="100%" controls autoplay muted loop>
+            <source src="/videos/showcase_video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="explanation">
+          <p>Grass Conflicts is a minigame based on Turf Wars from Mineplex.<br>It's a team based game, where the objective is to take over the entire enemy team's turf.<br><br>Your team gets 1 line of turf when an enemy dies, and as the game goes on, this number grows higher and higher.<br>You may only place and break blocks on your side of the turf.<br>Similarly to Turf Wars, you can build on your team's side during peace (Grass) phase, and fight only during the fighting (Conflicts) phase.</p>
+          
+          <div class="video-with-text">
+            <video controls autoplay muted loop>
+              <source src="/videos/grass_conflicts_death_anim.mp4" type="video/mp4" alt="Gun showcase in Grass Conflicts">
+            Your browser does not support the video tag.
+            </video>
+            <p>The kill streak death animation</p>
+          </div>
+          
+          
+          <p>As time goes on, air drops will start spawning, which contain useful & chaotic loot inside of them.</p>
+
+          <div class="video-with-text">
+            <video controls autoplay muted loop>
+              <source src="/videos/grass_conflicts_airdrop.mp4" type="video/mp4" alt="Gun showcase in Grass Conflicts">
+            Your browser does not support the video tag.
+            </video>
+            <p>Airdrops & the various items of Grass Conflicts</p>
+          </div>
+
+
+          <p>If you're wondering why it's called Grass Conflicts, it's an inside joke between my friends. I googled synonyms for the words "turf" and "wars", and picked the first two words that came up. And thus, Grass Conflicts was born.</p>
+          
+          <div class="code">
+            <h2>Coding Process</h2>
+            <p class="archived-warning">Note: This project is archived, meaning the code is not in the best state, there are other projects whose code I'm more proud of.</p>
+            <p>I challenged myself to create this project in under a week, and it has helped me a lot in understanding how to write minigame plugins, and how to work with Kotlin.<br>There are a lot of things I'd have done differently in hindsight, and lessons I've learned that I've taken with me to my next projects.<br><br>I used the <a href="https://www.spigotmc.org/resources/fastasyncworldedit.13932/" rel="noopener noreferrer" target="_blank">FAWE API</a> to handle large block update operations such as: Removing blocks, moving the red line and resetting the map.<br><br>For storing data in items (such as uses left), I used Paper's <a href="https://docs.papermc.io/paper/dev/pdc" rel="noopener noreferrer" target="_blank">Persistent Data Container (PDC)</a>.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="github">
+        <h2>Project's source:</h2>
+        <a href="https://github.com/Gameoholic/GrassConflicts" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+  </body>
+</html>
+
+<script src="scripts/index.js"></script>

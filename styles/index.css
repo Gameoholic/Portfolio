@@ -1,38 +1,40 @@
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
 
-body{
+body {
   background: #343434;
   color: #fff;
 }
 
-/* ---------------header---------------------- */
+:root {
+  --yellow-color: rgb(255, 206, 11);
+  --gold-color: rgb(255, 157, 0);
+  --aqua-color: rgb(3, 181, 252);
+}
 
+/* ----------------------  home ---------------------- */
 
-#header{
+#home {
   width: 100%;
   height: 100vh;
-  background-image: url("images/background.png");
+  background-image: url("/images/background.png");
   background-size: cover;
   background-position: center;
 }
-.container{
+.container {
   padding: 10px 10%;
 }
 
-nav{
+/* nav menu */
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.logo{
-  width: 140px;
 }
 
 nav ul li{
@@ -63,170 +65,175 @@ nav ul li a:hover::after{
   width: 100%;
 }
 
-.header-text{
+#home-text{
+  display: inline-block;
   margin-top: 15%;
   font-size: 30px;
 }
 
-.header-text h1{
+#home-text h1 {
   margin-top: 20px;
   font-size: 60px;
+  color: rgb(31, 31, 31);
+}
+
+#home-text h1 span {
+  color: var(--aqua-color);
+}
+
+#social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+}
+#social-icons a {
+  text-decoration: none;
+  color: var(--aqua-color);
+  font-size: 50px;
+  margin-right: 7px;
+  margin-left: 7px;
+  transition: transform 0.25s;
+}
+#social-icons a:hover {
+  transform: translateY(-8px);
+}
+#discord {
+  color: rgb(114, 137, 218);
+}
+#twitter {
+  color: rgb(29, 161, 242);
+}
+#github {
+  color: black;
 }
 
 
-.header-text h1 span{
-  color: rgb(255, 217, 0);
-}
+/* ---------------------- about ---------------------- */
 
-
-/* ---------------about---------------------- */
-
-
-#about{
+#about {
   width: 100%;
   height: 100vh;
   padding: 80px 0;
   color: #aba;
 }
-.row{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
 
-.about-col-1{
-  flex-basis: 35%;
-}
-.about-col-1 img{
-  width: 100%;
-  border-radius: 35px;
-}
-.about-col-2{
-  flex-basis: 60%;
-}
-
-.subtitle{
+.subtitle {
   font-size: 60px;
   font-weight: 600;
   margin-bottom: 20px;
   color: white;
 }
 
-#tab-titles{
+#video-container {
+  margin: auto;
+  width: 50%;
+  border: 3px solid var(--yellow-color);
+  margin-bottom: 50px;
+  display: block;
+}
+
+/* tab-titles (skills/experience/hobbies) */
+#tab-titles {
   display: flex;
   margin: 20px 0 40px;
 }
-.tab-title{
+
+.tab-title {
   margin-right: 50px;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   position: relative;
 }
-.tab-title::after{
+.tab-title::after {
   content: '';
   width: 0;
   height: 3px;
-  background: red;
+  background: var(--yellow-color);
   position: absolute;
   left: 0;
   bottom: -8px;
   transition: 0.5s;
 }
-.tab-title.active-tab::after{
-  width: 50%;
+.tab-title.active-tab::after {
+  width: 100%;
 }
-.tab-content{
+
+/* tab-content - the content below a tab */
+.tab-content {
   display: none;
+  line-height: 1.3;
 }
-.tab-content.active-tab{
+.tab-content.active-tab {
   display: block;
 }
-.tab-content ul li{
+.tab-content ul li {
   list-style: none;
   margin: 10px 0;
+  margin-bottom: 20px;
 }
-.tab-content ul li span{
-  color: rgb(255, 157, 0);
-  font-size: 16px;
-}
-
-
-
-/* -----------------services-------------- */
-
-
-#services{
-  width: 100%;
-  height: 100vh;
-  padding: 30px 0;
-}
-.services-list{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
-  margin-top: 50px;
-}
-.services-list div{
-  background: rgb(104, 104, 104);
-  padding: 40px;
-  font-size: 13px;
-  font-weight: 300;
-  border-radius: 10px;
-  transition: background 0.3s, transform 0.5s;
-}
-.services-list div:hover{
-  background: #f9a600;
-  transform: translateY(-20px);
-}
-.services-list div i {
-  font-size: 50px;
-  margin-bottom: 25px;
-}
-.services-list div h2 {
-  font-size: 30px;
+.tab-content ul li h1 {
+  margin-bottom: 5px;
+  color: var(--gold-color);
+  font-size: 22px;
   font-weight: 500;
-  margin-bottom: 15px;
-}
-.services-list div a {
-  text-decoration: none;
-  color: white;
-  font-size: 12px;
-  font-weight: 700;
-  margin-top: 15px;
-  display: inline-block;
 }
 
-
-/* -----------------------portfolio----------- */
-#portfolio{
+/* ----------------------- projects ----------------------- */ 
+#projects {
   padding: 50px 0;
 }
-.work-list{
+#project-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   margin-top: 50px;
 }
-.work{
+
+/* project - the square div for every project */
+.project {
+  aspect-ratio: 1.0;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
   display: block;
 }
-.work:hover img{
-  transform: scale(1.1)
+.project:hover {
+  cursor: pointer;
 }
-.work img{
+.project:hover img {
+  transform: scale(1.1);
+}
+.project:hover .project-tag {
+  transform: scale(1.0);
+}
+
+.project img {
   width: 100%;
   border-radius: 10px;
-  display: block;
+  display: cover;
+  object-fit: fit;
   transition: transform 0.5s;
 }
-.layer{
+
+/* project-tag - any tag that shows up in front of the project when hovering over it */
+.project-tag {
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: scale(2.5);
+  z-index: 6;
+}
+
+/* project-info-player - the layer that pops up when hovering over the image */
+.project-info-layer {
+  z-index: 5;
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(255, 141, 10, 0.6), #ff004f);
+  background: linear-gradient(rgba(10, 255, 247, 0.8), rgba(255, 170, 0, 0.9));
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -241,30 +248,31 @@ nav ul li a:hover::after{
   font-size: 16px;
   transition: height 0.5s;
 }
-.work:hover .layer{
-  height: 100%;
-}
-.layer h3{
+.project-info-layer p {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
   font-weight: 500;
+  text-shadow: black 2px 2px;
+}
+.project-info-layer h1 {
+  color: rgb(255, 255, 255);
+  text-shadow: black 2px 2px;
   margin-bottom: 20px;
 }
-.layer a{
-  margin-top: 20px;
-  color: rgb(5, 3, 3);
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 60px;
-  background: #fff;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  text-align: center;
+.project-info-layer h2 {
+  color: rgb(255, 255, 255);
+  text-shadow: black 2px 2px;
+  margin-top: 25px;
 }
-.btn{
+.project:hover .project-info-layer {
+  height: 100%;
+}
+
+#see-more-button {
   display: block;
   margin: 50px auto;
   width: fit-content;
-  border: 1px solid #ff004f;
+  border: 1px solid var(--yellow-color);
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
@@ -272,26 +280,26 @@ nav ul li a:hover::after{
   background: rgb(141, 143, 141);
   transition: background 0.5s;
 }
-.btn:hover{
+.see-more-button:hover {
   background: rgb(98, 98, 98);
 }
 
 /* ---------contact----------- */
-.contact-left{
+.contact-left {
   flex-basis: 35%;
 }
-.contact-left p{
+.contact-left p {
   margin-top: 30px;
 }
-.contact-left p i{
+.contact-left p i {
   color:rgb(104, 104, 104);
   margin-right: 15px;
   font-size: 25px;
 }
-.social-icons{
+.social-icons2 {
   margin-top: 30px;
 }
-.social-icons a{
+.social-icons2 a {
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
@@ -299,31 +307,31 @@ nav ul li a:hover::after{
   display: inline-block;
   transition: transform 0.25s;
 }
-.social-icons a:hover{
+.social-icons2 a:hover {
   color: green;
   transform: translateY(-5px);
 }
 
 /* ----------------- css for smaller screens ------------------ */
-nav .fas{
+nav .fas {
   display: none;
 }
-@MEDIA only screen and (max-width: 600px){
-  #header{
+@MEDIA only screen and (max-width: 600px) {
+  #header {
     background-image: url("images/phone-background.png");
   }
-  .header-text{
+  .header-text {
     margin-top: 100%;
     font-size: 16px;
   }
-  .header-text h1{
+  .header-text h1 {
     font-size: 30px;
   }
-  nav .fas{
+  nav .fas {
     display: block;
     font-size: 25px;
   }
-  nav ul{
+  nav ul {
     background: rgb(216, 34, 34);
     position: fixed;
     top: 0;
@@ -334,33 +342,33 @@ nav .fas{
     z-index: 2;
     transition: right 0.5s;
   }
-  nav ul li{
+  nav ul li {
     display: block;
     margin: 25px;
   }
-  nav ul li .fas{
+  nav ul li .fas {
     position: absolute;
     top: 25px;
     left: 25px;
     cursor: pointer;
   }
-  .subtitle{
+  .subtitle {
     font-size: 40px;
   }
-  .about-col-1, .about-col-2{
+  .about-col-1, .about-col-2 {
     flex-basis: 100%;
   }
-  .about-col-1{
+  .about-col-1 {
     margin-bottom: 30px;
   }
-  .about-col-2{
+  .about-col-2 {
     font-size: 14px;
   }
-  .tab-title{
+  .tab-title {
     font-size: 18px;
     margin-right: 13px;
   }
-  .contact-left{
+  .contact-left {
     flex-basis: 100%;
   }
 }
