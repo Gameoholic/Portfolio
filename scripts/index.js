@@ -85,20 +85,21 @@ video.addEventListener("dblclick", function(event) { handleVideoDoubleClick(even
 video.removeAttribute("controls")
 
 
-function handleVideoDoubleClick() {
+function handleVideoDoubleClick(event) {
   video.requestFullscreen()
 }
 
 
 
 
-
 let twitchRewards = document.getElementById("twitch-rewards")
+twitchRewards.addEventListener("click", function(event) { changeWindowToProject(event, 'twitch_rewards') });
 
-twitchRewards.addEventListener("click", function(event) { testt(event) });
+let grassConflicts = document.getElementById("grass-conflicts")
+grassConflicts.addEventListener("click", function(event) { changeWindowToProject(event, 'grass_conflicts') });
 
-function testt() {
-  window.location.href = 'projects/grass_conflicts.html'
+function changeWindowToProject(event, name) {
+  window.location.href = `projects/${name}.html`
 }
 
 
