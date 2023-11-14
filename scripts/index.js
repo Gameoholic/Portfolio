@@ -104,6 +104,9 @@ theStartup.addEventListener("click", function(event) { changeWindowToProject(eve
 let adminBombs = document.getElementById("admin-bombs")
 adminBombs.addEventListener("click", function(event) { changeWindowToProject(event, 'admin_bombs') });
 
+let fancy2FA = document.getElementById("fancy-2fa")
+fancy2FA.addEventListener("click", function(event) { changeWindowToProject(event, 'fancy_2fa') });
+
 function changeWindowToProject(event, name) {
   window.location.href = `projects/${name}.html`
 }

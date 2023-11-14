@@ -89,6 +89,10 @@ a {
   margin-top: 20px;
   margin-bottom: 15px;
 }
+.code h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .archived-warning {
   color: var(--yellow-color);
   margin-bottom: 15px;

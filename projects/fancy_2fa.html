@@ -13,45 +13,22 @@
   <body>
       <div class="container">
         <div class="header">
-          <h1>Grass Conflicts</h1>
+          <h1>Fancy 2FA</h1>
 
           <div class="video-with-text">
             <video controls autoplay muted loop>
-              <source src="/videos/grass_conflicts.mp4" type="video/mp4" alt="Gun showcase in Grass Conflicts">
+              <source src="/videos/fancy_2fa.mp4" type="video/mp4" alt="Gun showcase in Grass Conflicts">
             Your browser does not support the video tag.
             </video>
-            <p>Watch the full video <a href="https://youtu.be/j7RQOOP82Yc?si=XzXzH4-84zeii03l" rel="noopener noreferrer" target="_blank"><i>here</i></a> </p>
           </div>
         </div>
         <div class="explanation">
-          <p>Grass Conflicts is a minigame based on Turf Wars from Mineplex.<br>It's a team based game, where the objective is to take over the entire enemy team's turf.<br><br>Your team gets 1 line of turf when an enemy dies, and as the game goes on, this number grows higher and higher.<br>You may only place and break blocks on your side of the turf.<br>Similarly to Turf Wars, you can build on your team's side during peace (Grass) phase, and fight only during the fighting (Conflicts) phase.</p>
-          
-          <div class="video-with-text">
-            <video controls autoplay muted loop>
-              <source src="/videos/grass_conflicts_death_anim.mp4" type="video/mp4" alt="Gun showcase in Grass Conflicts">
-            Your browser does not support the video tag.
-            </video>
-            <p>The kill streak death animation</p>
-          </div>
-          
-          
-          <p>As time goes on, air drops will start spawning, which contain useful & chaotic loot inside of them.</p>
-
-          <div class="video-with-text">
-            <video controls autoplay muted loop>
-              <source src="/videos/grass_conflicts_airdrop.mp4" type="video/mp4" alt="Gun showcase in Grass Conflicts">
-            Your browser does not support the video tag.
-            </video>
-            <p>Airdrops & the various items of Grass Conflicts</p>
-          </div>
-
-
-          <p>If you're wondering why it's called Grass Conflicts, it's an inside joke between my friends. I googled synonyms for the words "turf" and "wars", and picked the first two words that came up. And thus, Grass Conflicts was born.</p>
+          <p>Fancy2FA is a 2 factor authentication plugin I made primarly as a learning experience.<br>When logging on for the first time, you will be prompted to create an authentication method for yourself (Discord, security questions or a password). The data is then hashed, salted and peppered, and stored in a MySQL database.<br><br>When logging back on, you will be frozen in place, until you pass one of the authentication methods.</p>
           
           <div class="code">
-            <h2>Coding Process</h2>
+            <h2>From a Technical Viewpoint</h2>
             <p class="archived-warning">Note: This project is archived, meaning the code is not in the best state, there are other projects whose code I'm more proud of.</p>
-            <p>I challenged myself to create this project in under a week, and it has helped me a lot in understanding how to write minigame plugins, and how to work with Kotlin.<br>There are a lot of things I'd have done differently in hindsight, and lessons I've learned that I've taken with me to my next projects.<br><br>I used the <a href="https://www.spigotmc.org/resources/fastasyncworldedit.13932/" rel="noopener noreferrer" target="_blank">FAWE API</a> to handle large block update operations such as: Removing blocks, moving the red line and resetting the map.<br><br>For storing data in items (such as uses left), I used Paper's <a href="https://docs.papermc.io/paper/dev/pdc" rel="noopener noreferrer" target="_blank">Persistent Data Container (PDC)</a>.</p>
+            <p>This was a learning project of mine, which helped me learn how to work with MySQL, Kotlin, NMS, ktor and the Discord API without using an API wrapper. It's not intended to be used in production, as it wasn't tested for vulnerabilities and might have exploits. NMS was used for the sign UI, and ktor was used for webserver for the Discord authentication.<br><br>In hindsight, I would have done things differently - Discord OAuth2 shouldn't be used for user authentication - better to use an actual Discord bot. This plugin was also the first time I'd created menus, and my menu system could've been written better.<br>All in all, it was a nice project and I learned a lot from it.
           </div>
 
         </div>
@@ -59,7 +36,7 @@
 
       <div class="github">
         <h2>Project's source:</h2>
-        <a href="https://github.com/Gameoholic/GrassConflicts" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://github.com/Gameoholic/Fancy2FA" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a>
       </div>
 
       <div class="go-back">
