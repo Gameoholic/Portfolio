@@ -98,6 +98,12 @@ twitchRewards.addEventListener("click", function(event) { changeWindowToProject(
 let grassConflicts = document.getElementById("grass-conflicts")
 grassConflicts.addEventListener("click", function(event) { changeWindowToProject(event, 'grass_conflicts') });
 
+let theStartup = document.getElementById("the-startup")
+theStartup.addEventListener("click", function(event) { changeWindowToProject(event, 'the_startup') });
+
+let adminBombs = document.getElementById("admin-bombs")
+adminBombs.addEventListener("click", function(event) { changeWindowToProject(event, 'admin_bombs') });
+
 function changeWindowToProject(event, name) {
   window.location.href = `projects/${name}.html`
 }

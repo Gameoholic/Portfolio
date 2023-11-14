@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang=""en>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gameoholic's Portfolio</title>
+    <link rel="stylesheet" href="/styles/admin_bombs.css">
+    <script src="https://kit.fontawesome.com/793b2a4346.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+      <div class="container">
+        <div class="header">
+          <h1>Admin Bombs</h1>
+
+          <div class="video-with-text">
+            <video controls autoplay muted loop>
+              <source src="/videos/admin_bombs.mp4" type="video/mp4" alt="Gun showcase in Grass Conflicts">
+            Your browser does not support the video tag.
+            </video>
+            <p>Watch the full video <a href="https://youtu.be/j7RQOOP82Yc?si=XzXzH4-84zeii03l" rel="noopener noreferrer" target="_blank"><i>here</i></a> </p>
+          </div>
+        </div>
+        <div class="explanation">
+          <p>Admin Bombs is a plugin I made for TopStrix's most popular game mode, "Unnamed Project". The Project is a very bizarre anarchy-like mode with PVP disabled, in which players are given no direction, and can do pretty much anything they want. (it's not anarchy, as the rules of the server still apply)<br><br>When running the command /bombs, you are shown a menu in which you can see the current active Bombs, available Bombs, and the different collections and lores you can get.<br>When activating an Admin Bomb, every single player connected to The Project will be able to claim it, either through chat or the menu. When redeemed, they will get a random Admin Item, with your name and the date stamped on it, the edition number, along with random lores.<br>Lores have different rarities, with the rarest ones only being given out to one player once every couple of weeks.<br>Players are encouraged to hold onto these items, especially if they have rare lores, as they are considered exotic and can be traded for other Admin Items.</p>
+          
+          <p>There are different collections of Admin Bombs (Classic, Summer, etc.). Different collections have different item pools and lores. They also have different animations that play for everyone when activated (see video above).</p>
+
+          <div class="code">
+            <h2>From a Technical Viewpoint</h2>
+            <p>The amounts of bombs every player has are tracked in a MySQL database, along with how many items of every type are in circulation (to determine the # edition number).<br>The data is cached in memory, and saved to the database every couple of minutes, or when activating a bomb. In case of a database failure, the bomb is refunded to the player and the operation is reverted.<br>The items, along with lores and other settings are all configurable in the plugin's config file.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="go-back">
+        <button onclick="location.href='/index.html#projects'" type="button">
+          Go back
+        </button>
+      </div>
+  </body>
+</html>
+
+<script src="scripts/index.js"></script>
