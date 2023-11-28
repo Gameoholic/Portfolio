@@ -130,3 +130,15 @@ a {
 .go-back button:hover {
   background:rgb(202, 202, 202);
 }
+
+/* ----------------- css for smaller screens ------------------ */
+@MEDIA only screen and (max-width: 900px) {
+  .header video {
+    width: 100%;
+  }
+
+  .explanation {
+    padding: 10px 0px;
+    margin-bottom: 40px;
+  }
+}
