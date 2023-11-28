@@ -62,7 +62,7 @@ $(document).ready(function(){
       var currentOffset = $(window).scrollTop();
       var distance = Math.abs(targetOffset - currentOffset);
 
-      var duration = distance;
+      var duration = distance / 2;
 
       // Using jQuery's animate() method to add smooth page scroll
       $('html, body').animate({
