@@ -75,7 +75,7 @@ nav ul li a:hover::after{
   width: 100%;
 }
 
-#home-text{
+#home-text {
   display: inline-block;
   margin-top: 15%;
   font-size: 30px;
@@ -122,7 +122,7 @@ nav ul li a:hover::after{
   margin-top: 40px;
   color: rgb(0, 0, 0);
   font-size: 32px;
-  width: 1000px;
+  width: 50%;
 }
 
 
@@ -328,16 +328,24 @@ nav ul li a:hover::after{
 nav .fas {
   display: none;
 }
-@MEDIA only screen and (max-width: 600px) {
+@MEDIA only screen and (max-width: 900px) {
   #header {
     background-image: url("images/phone-background.png");
   }
-  .header-text {
-    margin-top: 100%;
-    font-size: 16px;
+  #splash-text {
+    margin-top: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    width: 80%;
   }
-  .header-text h1 {
+  #home-text h1 {
     font-size: 30px;
+  }
+  #social-icons {
+    margin-top: 20px;
+  }
+  #social-icons a {
+    font-size: 36px;
   }
   nav .fas {
     display: block;
@@ -392,7 +400,7 @@ nav .fas {
   }
 
   #project-list {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(1, 1fr); 
   }
 }
 
