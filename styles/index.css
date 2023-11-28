@@ -88,7 +88,9 @@ nav ul li a:hover::after{
 }
 
 #home-text h1 span {
-  color: var(--aqua-color);
+  background: linear-gradient(to right, var(--aqua-color), rgb(0, 204, 255));
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 #social-icons {
