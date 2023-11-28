@@ -8,6 +8,19 @@
 body {
   background: #343434;
   color: #fff;
+  transition: all .1.5s ease-in-out;
+  animation: fade-right 1.5s;
+}
+
+@keyframes fade-right {
+  0%{
+      opacity: 0;
+      transform: translate3d(0.1) scale(0.9);
+  }
+  100%{
+      opacity: 1;
+      transform: translateZ(0px) scale(1);
+  }
 }
 
 :root {
@@ -22,7 +35,7 @@ p {
 
 a {
   text-decoration: underline;
-  color: var(--gold-color);
+  color: var(--aqua-color);
 }
 
 /* ----------------------  home ---------------------- */

@@ -5,9 +5,23 @@
   box-sizing: border-box;
 }
 
+
 body {
   background: #343434;
   color: #fff;
+  transition: all .2s ease-in-out;
+  animation: fade-right 2s;
+}
+
+@keyframes fade-right {
+  0%{
+      opacity: 0;
+      transform: translate3d(0.1) scale(0.9);
+  }
+  100%{
+      opacity: 1;
+      transform: translateZ(0px) scale(1);
+  }
 }
 
 :root {
@@ -16,15 +30,15 @@ body {
   --aqua-color: rgb(3, 181, 252);
 }
 
-
 .container {
   padding: 10px 10%;
 }
 
 
 .header h1 {
-  font-size: 80px;
-  margin-bottom: 50px;
+  font-size: 40px;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 
@@ -72,7 +86,7 @@ a {
   font-style: normal;
   text-decoration: underline;
   font-weight: 600;
-  color: var(--gold-color);
+  color: var(--aqua-color);
 }
 
 .header {
