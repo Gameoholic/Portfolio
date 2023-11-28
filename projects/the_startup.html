@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gameoholic's Portfolio</title>
     <link rel="stylesheet" href="/styles/the_startup.css">
-    <script src="https://kit.fontawesome.com/793b2a4346.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/styles/prism.css">
   </head>
 
   <body>
@@ -75,15 +74,15 @@
             <h3>Tasks & Configuration</h3>
             <p>The plugin is 100% customizable (which is why I was able to translate it to English for the showcase videos on this page), including strings, tasks and various other settings.<br>Below are a couple examples of tasks, taken from the config file:</p>
             <pre>
-              <code>
-                - kill-specific-mobs:
-                  amount-required: 100
-                  type: "CHICKEN"
-                - craft-specific-items:
-                  amount-required: 32
-                  material: "REDSTONE_LAMP"
-                - kill-any-mobs:
-                  amount-required: 100
+              <code class="language-yaml">
+- kill-specific-mobs:
+    amount-required: 100
+    type: "CHICKEN"
+- craft-specific-items:
+    amount-required: 32
+    material: "REDSTONE_LAMP"
+- kill-any-mobs:
+    amount-required: 100
               </code>
             </pre>
           </div>
@@ -99,4 +98,7 @@
   </body>
 </html>
 
-<script src="scripts/index.js"></script>
+<script src="/scripts/global.js"></script>
+<script src="/scripts/prism.js"></script>
+<script src="https://kit.fontawesome.com/793b2a4346.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

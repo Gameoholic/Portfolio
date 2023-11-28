@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang=""en>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gameoholic's Portfolio</title>
+    <link rel="stylesheet" href="/styles/partigon.css">
+    <script src="https://kit.fontawesome.com/793b2a4346.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+      <div class="container">
+        <div class="header">
+          <h1>Partigon</h1>
+
+          <div class="video-with-text">
+            <video controls autoplay muted loop>
+              <source src="/videos/partigon.mp4" type="video/mp4" alt="Gun showcase in Grass Conflicts">
+            Your browser does not support the video tag.
+            </video>
+            <p>Showcase of particle animations made with Partigon</p>
+          </div>
+        </div>
+        <div class="explanation">
+          <p>Partigon is a library which makes it easier for plugin developers to create complex particle animations. It's written in Kotlin, for use in Paper plugins.<br>Partigon is a powerful library with a lot of different concepts, I'd recommend taking a look at the <a href="https://partigon.gameoholic.xyz/" rel="noopener noreferrer" target="_blank">documentation</a>.<br><br>In short, particles are created through either of the PartigonParticle interface implementations (SingularParticle or MultiParticle).<br>All properties are controlled via <i>Envelopes</i>. An Envelope is essentially an interpolation of a value over time. There are different types of Envelopes, and Envelope Wrappers, which ease the process of creating more complex shapes. (curves, circles..)<br>Envelopes require Loops. Loops determine the frame index passed to the envelope, and add support for repeating and reversing animations.</p>
+          <div class="video-with-text">
+            <video controls autoplay muted loop>
+              <source src="/videos/partigon_loops.mp4" type="video/mp4" alt="Gun showcase in Grass Conflicts">
+            Your browser does not support the video tag.
+            </video>
+            <p>Different Loop types</p>
+          </div>
+
+          <p>It's also possible to pass rotation options to envelopes & particles, which results in nice animations when used creatively<br><br>Because Partigon is written in Kotlin, it takes advantage of Kotlin concepts, such as the DSL builder pattern, inline methods & properties, and extensions. It makes the library much more boilerplate-free and nicer to work with.<br><br>To see the code of the example particles shown at the top of this page, click <a href="https://github.com/Gameoholic/PartigonExamplePlugin/tree/main/src/main/kotlin/xyz/gameoholic/partigonexampleplugin/particles/d_cool_examples" rel="noopener noreferrer" target="_blank">here</a>.<br>Click <a href="https://hangar.papermc.io/Gameoholic/Partigon" rel="noopener noreferrer" target="_blank">here</a> to visit the Hangar page for this project.</p>
+
+          
+        
+
+        </div>
+      </div>
+
+      <div class="github">
+        <h2>Project's source:</h2>
+        <a href="https://github.com/Gameoholic/Partigon" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+
+      <div class="go-back">
+        <button onclick="location.href='/index.html#projects'" type="button">
+          Go back
+        </button>
+      </div>
+  </body>
+</html>
+
+<script src="/scripts/global.js"></script>

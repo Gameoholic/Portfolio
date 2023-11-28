@@ -107,10 +107,18 @@ adminBombs.addEventListener("click", function(event) { changeWindowToProject(eve
 let fancy2FA = document.getElementById("fancy-2fa")
 fancy2FA.addEventListener("click", function(event) { changeWindowToProject(event, 'fancy_2fa') });
 
+let hubElytras = document.getElementById("hub-elytras")
+hubElytras.addEventListener("click", function(event) { changeWindowToProject(event, 'hub_elytras') });
+
+let partigon = document.getElementById("partigon")
+partigon.addEventListener("click", function(event) { changeWindowToProject(event, 'partigon') });
+
+let hubFishing = document.getElementById("hub-fishing")
+hubFishing.addEventListener("click", function(event) { changeWindowToProject(event, 'hub_fishing') });
+
 function changeWindowToProject(event, name) {
   window.location.href = `projects/${name}.html`
 }
-
 
 
 let archivedImages = document.getElementsByClassName("archived")

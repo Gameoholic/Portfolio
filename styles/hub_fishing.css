@@ -42,12 +42,29 @@ body {
   width: 80%;
   display: block;
 }
+.explanation img {
+  margin: auto;
+  width: 80%;
+  display: block;
+}
 
 .video-with-text video {
   margin-top: 20px;
   margin-bottom: 15px;
 }
 .video-with-text p {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 300p;
+  margin-bottom: 15px;
+}
+.image-with-text img {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.image-with-text p {
   display: block;
   text-align: center;
   font-style: italic;
@@ -78,6 +95,11 @@ a {
 .explanation h2 {
   margin-top: 20px;
   margin-bottom: 15px;
+}
+
+.highlight {
+  background-color:#535353;
+  padding: 2px 5px;
 }
 
 

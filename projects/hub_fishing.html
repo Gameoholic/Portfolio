@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang=""en>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gameoholic's Portfolio</title>
+    <link rel="stylesheet" href="/styles/hub_fishing.css">
+    <script src="https://kit.fontawesome.com/793b2a4346.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+      <div class="container">
+        <div class="header">
+          <h1>Hub Fishing</h1>
+
+          <div class="video-with-text">
+            <video controls autoplay muted loop>
+              <source src="/videos/hub_fishing.mp4" type="video/mp4" alt="Gun showcase in Grass Conflicts">
+            Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="explanation">
+          <p>Hub Fishing is an advanced fishing minigame plugin.<br>It adds the ability to add fishing lakes in your server, which spawn fish with custom AI and behaviour. When caught, you will enter the minigame, which is similar to fishing minigames in other 2D games.</p>
+
+          <div class="video-with-text">
+            <video controls autoplay muted loop>
+              <source src="/videos/hub_fishing_minigame.mp4" type="video/mp4" alt="Gun showcase in Grass Conflicts">
+            Your browser does not support the video tag.
+            </video>
+            <p>The 2D fishing minigame</p>
+          </div>
+
+          <p>You control the crosshair with your A and D keys, and press right click to cast your rod.<br>You have 3 attempts in total, each represented by a fishing rod at the bottom. They break for every attempt you lose.<br>After a couple of seconds, a timer will appear to pressure you, if you don't attempt to catch the fish after that, you will lose an attempt.</p>
+
+          <div class="video-with-text">
+            <video controls autoplay muted loop>
+              <source src="/videos/hub_fishing_lost_attempt.mp4" type="video/mp4" alt="Gun showcase in Grass Conflicts">
+            Your browser does not support the video tag.
+            </video>
+            <p>Losing an attempt due to time constraint</p>
+          </div>
+
+          <p>Fish come in different rarities, with legendary and epic variants awarding more XP, but also being more challenging to catch and having a lower chance of appearing.</p>
+          
+          <div class="image-with-text">
+            <img id="stats" class="expandable-image" src="/images/portfolio_images/hub_fishing/stats.png">
+            <p>Individual stats show up for every player</p>
+          </div>
+          
+
+          <p>You can open the fishing menu using the /fishing command, and see your fish collection, statistics and more.</p>
+
+          <div class="image-with-text">
+            <img id="main_menu" class="expandable-image" src="/images/portfolio_images/hub_fishing/main_menu.png">
+            <p>Main menu</p>
+          </div>
+
+          <div class="image-with-text">
+            <img id="fishing_collection_menu" class="expandable-image" src="/images/portfolio_images/hub_fishing/fish_collection_menu.png">
+            <p>Fishing collection menu, where you can see fish you've discovered and amount caught</p>
+          </div>
+
+          <p>The plugin is entirely customizable, and comes with a resource pack which I made. However, it's possible to edit it or make your own to make it fit your server's style.<br><br>There are also other features which I haven't covered here, such as: Fishing lakes locked behind a rank, boosting fish lake spawn chances, admin commands, leveling and more.</p>
+
+          <div class="code">
+            <h2>From a Technical Viewpoint</h2>
+            <p>This was a huge and very complex project.<br>I had a prototype ready after 2 weeks, and the rest of the time was spent polishing it, and adding features. In total, it took around 2.5 months to make, all on my own.</p>
+
+            <h3>How does the UI work?</h3>
+            <p>The characters are rendered on the player's title, and moved and positioned properly using the <a href="https://github.com/AmberWat/NegativeSpaceFont" rel="noopener noreferrer" target="_blank">Negative Space Font</a>. Because of the way Minecraft renders characters, each character has to be sized precisely.<br>The characters, their positions and sizes (height) are all configurable in the plugin's config file.<br>The minigame is split into different states. (<span class="highlight">RodCastState</span>, <span class="highlight">MissState</span>, <span class="highlight">FailureState</span>, etc.) Each has a renderer and a manager. The renderers extend the <span class="highlight">FishingMinigameUIRenderer</span> abstract class, which provides basic functionality for rendering the UI.</p>
+
+            <h3>Config</h3>
+            <p>Like mentioned before, the plugin is configurable - You can add fish rarities and variants, fish lakes, customize the menus and change every string and sound, as well as more advanced options like the UI.<br>I use <a href="https://github.com/Kotlin/kotlinx.serialization" rel="noopener noreferrer" target="_blank">kotlinx.serialization</a> and <a href="https://github.com/charleskorn/kaml" rel="noopener noreferrer" target="_blank">kaml</a> to parse the config files, of which there are 9. You can view them <a href="https://github.com/Gameoholic/HubFishing/tree/main/src/main/resources" rel="noopener noreferrer" target="_blank">here</a>.</p>
+
+            <h3>Player Data</h3>
+            <p>Player data is loaded upon login, cached, and then uploaded to the database upon logout.<br>For the Database I use MySQL, and Kotlin's <a href="https://kotlinlang.org/docs/coroutines-overview.html" rel="noopener noreferrer" target="_blank">Coroutines</a> for asynchronous programming. HikariCP is used for the connection pool.<br>The player is not allowed to use Fishing related commands or to fish, until their player data has loaded properly.</p>
+
+            <h3>Other</h3>
+            <p>The plugin uses my <a href="/projects/partigon.html" rel="noopener noreferrer" target="_blank">Partigon</a> library to create the particle animations seen in this plugin.<br>The A and D key detection is made by mounting the player on an entity and comparing their velocity vector to their direction vector.</p>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="github">
+        <h2>Project's source:</h2>
+        <a href="https://github.com/Gameoholic/HubFishing" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+
+      <div class="go-back">
+        <button onclick="location.href='/index.html#projects'" type="button">
+          Go back
+        </button>
+      </div>
+  </body>
+</html>
+
+<script src="/scripts/global.js"></script>
