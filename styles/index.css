@@ -20,6 +20,11 @@ p {
   font-size: 24px;
 }
 
+a {
+  text-decoration: underline;
+  color: var(--gold-color);
+}
+
 /* ----------------------  home ---------------------- */
 
 #home {
@@ -199,6 +204,12 @@ nav ul li a:hover::after{
   font-size: 22px;
   font-weight: 500;
 }
+.tab-content ul li h2 {
+  margin-bottom: 12px;
+  font-size: 22px;
+  list-style: none;
+  font-weight: 400;
+}
 
 /* ----------------------- projects ----------------------- */ 
 #projects {
@@ -306,10 +317,9 @@ nav ul li a:hover::after{
   font-size: 18px;
   text-align: center;
 }
+
 #credit a {
-  font-style: normal;
   text-decoration: none;
-  color: var(--gold-color);
 }
 
 
