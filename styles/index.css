@@ -329,8 +329,12 @@ nav .fas {
   display: none;
 }
 @MEDIA only screen and (max-width: 900px) {
-  #header {
-    background-image: url("images/phone-background.png");
+  p {
+    font-size: 20px;
+  }
+
+  #home {
+    background-image: url("/images/phone_background.png");
   }
   #splash-text {
     margin-top: 40px;
@@ -385,13 +389,31 @@ nav .fas {
     font-size: 14px;
   }
   .tab-title {
-    font-size: 18px;
+    font-size: 3px;
     margin-right: 13px;
   }
-  .contact-left {
-    flex-basis: 100%;
+  #about {
+    margin-bottom: 0px;
+  }
+  #about p {
+    font-size: 16px;
   }
 
+  .tab-content ul li {
+    font-size: 16px;
+  }
+  .tab-content ul li h1 {
+    font-size: 22px;
+  }
+  .tab-content ul li h2 {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  #video-container {
+    width: 100%;
+    border: 2px solid var(--yellow-color);
+  }
 
 
   #projects {
@@ -399,8 +421,16 @@ nav .fas {
     margin-bottom: 50px;
   }
 
+  #projects-header {
+    font-size: 20px;
+  }
+
   #project-list {
     grid-template-columns: repeat(1, 1fr); 
+  }
+
+  #credit p {
+    font-size: 16px;
   }
 }
 
