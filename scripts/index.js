@@ -116,6 +116,9 @@ partigon.addEventListener("click", function(event) { changeWindowToProject(event
 let hubFishing = document.getElementById("hub-fishing")
 hubFishing.addEventListener("click", function(event) { changeWindowToProject(event, 'hub_fishing') });
 
+let lumberDefense = document.getElementById("lumber-defense")
+lumberDefense.addEventListener("click", function(event) { changeWindowToProject(event, 'lumber_defense') });
+
 function changeWindowToProject(event, name) {
   window.location.href = `projects/${name}.html`
 }

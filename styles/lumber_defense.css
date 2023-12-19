@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+
+body {
+  background: #343434;
+  color: #fff;
+  transition: all .2s ease-in-out;
+  animation: fade-right 2s;
+}
+
+@keyframes fade-right {
+  0%{
+      opacity: 0;
+      transform: translate3d(0.1) scale(0.9);
+  }
+  100%{
+      opacity: 1;
+      transform: translateZ(0px) scale(1);
+  }
+}
+
+:root {
+  --yellow-color: rgb(255, 206, 11);
+  --gold-color: rgb(255, 157, 0);
+  --aqua-color: rgb(3, 181, 252);
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+
+.header h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+
+.header video {
+  border: 3px solid var(--yellow-color);
+  margin: auto;
+  width: 50%;
+  display: block;
+}
+.header h1 {
+  text-align: center;
+}
+.explanation video {
+  margin: auto;
+  width: 80%;
+  display: block;
+}
+
+.video-with-text video {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.video-with-text p {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 300p;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+ul {
+  padding-left: 20px;
+}
+li {
+  font-size: 20px;
+  padding: 0.4rem;
+}
+a {
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: 600;
+  color: var(--aqua-color);
+}
+
+.header {
+  margin-bottom: 75px;
+}
+
+.explanation {
+  padding: 10px 30%;
+  margin-bottom: 40px;
+}
+
+.code {
+  margin-top: 70px;
+}
+
+.code h2 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.archived-warning {
+  color: var(--yellow-color);
+  margin-top: 30px;
+}
+
+.github {
+  padding: 10px 30%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.github h2 {
+  font-size: 30px;  
+  margin-bottom: 15px;
+}
+.github a {
+  font-size: 50px;  
+}
+.github i {
+  transition: transform 0.25s;
+  color: white;
+}
+.github i:hover {
+  transform: translateY(-6px);
+}
+
+.go-back {
+  padding: 10px 30%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.go-back button {
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 15px;
+  border-color: var(--yellow-color);
+  border-style: solid;
+}
+.go-back button:hover {
+  background:rgb(202, 202, 202);
+}
+
+
+/* ----------------- css for smaller screens ------------------ */
+@MEDIA only screen and (max-width: 900px) {
+  .header video {
+    width: 100%;
+  }
+
+  .explanation {
+    padding: 10px 0px;
+    margin-bottom: 40px;
+  }
+}
