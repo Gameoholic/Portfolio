@@ -159,3 +159,62 @@ for (toolImage of toolImages){
 
   toolImage.appendChild(newImage)
 }
+
+let openSourceCheckbox = document.getElementById('open-source')
+openSourceCheckbox.addEventListener('change', (event) => {
+  onFilterUpdate();
+})
+
+let minigameRadioButton = document.getElementById('project-type-minigame')
+minigameRadioButton.addEventListener('change', (event) => {
+  onFilterUpdate();
+})
+
+let toolRadioButton = document.getElementById('project-type-tool')
+toolRadioButton.addEventListener('change', (event) => {
+  onFilterUpdate();
+})
+
+let allRadioButton = document.getElementById('project-type-all')
+allRadioButton.addEventListener('change', (event) => {
+  onFilterUpdate();
+})
+
+let allProjects = document.getElementsByClassName("project")
+
+function onFilterUpdate() {
+  if (openSourceCheckbox.checked) {
+
+    // Only show open source projects
+    for (project of allProjects) {
+      if (project.classList.contains("github"))
+        project.style.display = 'block';
+      else
+        project.style.display = 'none';
+    }
+  }
+  else {
+    // Show all projects
+    for (project of allProjects) {
+      project.style.display = 'block';
+    }
+  }
+
+  if (minigameRadioButton.checked) {
+    // Hide all non-minigame projects
+    for (project of allProjects) {
+      if (!project.classList.contains("minigame"))
+        project.style.display = 'none';
+    }
+  }
+
+  if (toolRadioButton.checked) {
+    // Hide all non-tool projects
+    for (project of allProjects) {
+      if (!project.classList.contains("tool"))
+        project.style.display = 'none';
+    }
+  }
+
+  // Otherwise, all projects will be displayed (all radio button)
+}

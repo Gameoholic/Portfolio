@@ -115,8 +115,23 @@
       <div class="container">
         <div class="subtitle">My Projects</div>
         <p id="projects-header">Projects I made, hover over them for more information.</p>
-          <div id="project-list">
 
+        <div id="filter-container">
+          <input type="checkbox" id="open-source" name="open-source">
+          <label for="open-source">Open Source</label><br>
+
+          <input type="radio" id="project-type-minigame" name="project-type">
+          <label for="project-type">Minigame</label><br>
+
+          <input type="radio" id="project-type-tool" name="project-type">
+          <label for="project-type">Tool</label><br>
+
+          <input type="radio" id="project-type-all" name="project-type" checked>
+          <label for="project-type">All</label><br>
+        </div>
+
+
+          <div id="project-list">
             <div id="lumber-defense" class="project github minigame">
               <img src="images/portfolio_images/LumberDefense.png">
               <div class="project-info-layer">

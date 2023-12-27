@@ -60,6 +60,21 @@ a {
   z-index: -1;
 }
 
+#filter-container {
+  padding: 20px 20px;
+  font-size: 25px;
+}
+
+input {
+  margin-bottom: 15px;
+}
+#open-source {
+  margin-bottom: 25px;
+}
+label {
+  color: rgb(170, 187, 170);
+}
+
 .container {
   padding: 10px 10%;
 }
@@ -258,6 +273,13 @@ nav ul li a:hover::after{
   position: relative;
   overflow: hidden;
   display: block;
+  
+  animation: move 0.5s;
+}
+
+@keyframes move {
+  from {bottom: -50px;}
+  to {bottom: 0px;}
 }
 .project:hover {
   cursor: pointer;
