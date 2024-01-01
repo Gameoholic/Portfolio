@@ -61,15 +61,15 @@ a {
 }
 
 #filter-container {
+  display: flex;
   padding: 20px 20px;
   font-size: 25px;
+  gap: 10px;
 }
 
-input {
-  margin-bottom: 15px;
-}
-#open-source {
-  margin-bottom: 25px;
+
+#project-type-minigame {
+  margin-left: 25px;
 }
 label {
   color: rgb(170, 187, 170);

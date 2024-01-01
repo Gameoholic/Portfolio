@@ -90,6 +90,22 @@ a {
   margin-bottom: 40px;
 }
 
+.github-info {
+  padding: 10px 30%;
+  margin-bottom: 20px;
+}
+.github-info p {
+  text-align: center;
+  background-color: #6d6969;
+  padding: 10px;
+  border-radius: 10px;
+}
+#github-info-icon {
+  font-size: 26px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
 .code {
   margin-top: 70px;
 }
