@@ -65,6 +65,7 @@ body {
 .video-with-text video {
   margin-top: 20px;
   margin-bottom: 15px;
+  border: 2px solid var(--yellow-color);
 }
 .video-with-text p {
   display: block;
@@ -77,6 +78,7 @@ body {
 .image-with-text img {
   margin-top: 20px;
   margin-bottom: 15px;
+  border: 2px solid var(--yellow-color);
 }
 .image-with-text p {
   display: block;
