@@ -62,7 +62,38 @@
 
           <p><b><br>This project is still under development, with tons of more features to come.</b></p>
 
-          <p class="archived-warning">This page is still under construction! Return on January 1st for a more updated version of this page, documenting features and mechanics.</p>
+
+          <div class="code">
+            <h2>From a Technical Viewpoint</h2>
+
+            <h3>Mobs</h3>
+            <p>The mobs are split into 2 types: Those that attack players ("hostile mobs"), and those that attack the tree ("tree mobs").<br>I had to make sure that hostile mobs would spawn and target the player, regardless of the distane between them and line of sight. For this I had to modify the mobs' target and attack goals with NMS.<br>As for tree mobs, I used NMS to create custom navigation for them, so that they pathfind to the tree, and attack it when close. Further custom goals had to be written for creepers, skeletons and custom mobs like the Ranged Bomber, that chucks TNT at players.<br>As for balancing, each mob has a Challenge Rating (abbreviated CR). Their stats scale along with the mob's Challenge Rating.</p>
+
+            <div class="image-with-text">
+              <img class="expandable-image" src="/images/portfolio_images/lumber_defense/mobs.png">
+              <p>Full config file available <a href="https://github.com/Gameoholic/LumberGame/blob/main/src/main/resources/hostile_mob_types.yml" rel="noopener noreferrer" target="_blank">here</a></p>
+            </div>
+            
+            <h3>Waves</h3>
+            <p>Every wave has a Challenge Rating, mob types that can spawn during it, and other settings.<br>The Challenge Rating will be spent on spawning mobs. For example, a wave with a CR of 30, with mobs that spawn between CR 5-7, will on average have 5 mobs with a Challenge Rating of 6.</p>
+
+            <div class="image-with-text">
+              <img class="expandable-image" src="/images/portfolio_images/lumber_defense/waves.png">
+              <p>Full config file available <a href="https://github.com/Gameoholic/LumberGame/blob/main/src/main/resources/waves.yml" rel="noopener noreferrer" target="_blank">here</a></p>
+            </div>
+
+            <h3>Menus & Perks</h3>
+            <p>I created a system for menus and perks, so it's really easy to create shops, inventory menus and perks.</p>
+
+            <div class="image-with-text">
+              <img class="expandable-image" src="/images/portfolio_images/lumber_defense/menu.png">
+              <p>Perks Shop Menu</p>
+            </div>
+  
+            <h3>Other</h3>
+            <p>The plugin uses my <a href="/projects/partigon.html" rel="noopener noreferrer" target="_blank">Partigon</a> library to create the particle animations seen in this plugin.<br>I used the <a href="https://www.spigotmc.org/resources/fastasyncworldedit.13932/" rel="noopener noreferrer" target="_blank">FAWE API</a> to update the tree with a schematic upon levelling it up.</p>
+          </div>
+
         </div>
       </div>
 

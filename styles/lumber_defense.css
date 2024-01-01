@@ -123,6 +123,10 @@ a {
   margin-top: 20px;
   margin-bottom: 15px;
 }
+.code h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .archived-warning {
   color: var(--yellow-color);
   margin-top: 30px;
@@ -165,6 +169,21 @@ a {
   background:rgb(202, 202, 202);
 }
 
+.image-with-text img {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--yellow-color);
+}
+.image-with-text p {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 300p;
+  margin-bottom: 15px;
+}
 
 /* ----------------- css for smaller screens ------------------ */
 @MEDIA only screen and (max-width: 900px) {
