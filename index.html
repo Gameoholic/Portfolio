@@ -117,17 +117,25 @@
         <p id="projects-header">Projects I made, hover over them for more information.</p>
 
         <div id="filter-container">
-          <input type="checkbox" id="open-source" name="open-source">
-          <label for="open-source">Open Source</label>
+          <div class="filter-option">
+            <input type="checkbox" id="open-source" name="open-source">
+            <label for="open-source">Open Source</label>
+          </div>
 
-          <input type="radio" id="project-type-minigame" name="project-type">
-          <label for="project-type">Minigame</label>
+          <div class="filter-option">
+            <input type="radio" id="project-type-all" name="project-type" checked>
+            <label for="project-type">All</label>
+          </div>
+          
+          <div class="filter-option">
+            <input type="radio" id="project-type-minigame" name="project-type">
+            <label for="project-type">Minigame</label>
+          </div>
 
-          <input type="radio" id="project-type-tool" name="project-type">
-          <label for="project-type">Tool</label>
-
-          <input type="radio" id="project-type-all" name="project-type" checked>
-          <label for="project-type">All</label>
+          <div class="filter-option">
+            <input type="radio" id="project-type-tool" name="project-type">
+            <label for="project-type">Tool</label>
+          </div>
         </div>
 
 

@@ -61,8 +61,11 @@ a {
 }
 
 #filter-container {
-  padding: 20px 20px;
+  padding: 20px 0px;
   font-size: 25px;
+}
+.filter-option {
+  display: inline-block;
 }
 #filter-container input {
   display: inline-block;
@@ -71,9 +74,8 @@ a {
   display: inline-block;
   margin-right: 10px;
   color: rgb(170, 187, 170);
-
 }
-#project-type-minigame {
+#project-type-all {
   margin-left: 25px;
 }
 
@@ -482,6 +484,13 @@ nav .fas {
   }
 
 
+  .filter-option {
+    display: block;
+  }
+  #project-type-all {
+    margin-left: 0px;
+    margin-top: 25px;
+  }
 
 
   #credit p {
