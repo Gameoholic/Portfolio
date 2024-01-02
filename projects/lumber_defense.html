@@ -89,6 +89,9 @@
               <img class="expandable-image" src="/images/portfolio_images/lumber_defense/menu.png">
               <p>Perks Shop Menu</p>
             </div>
+            
+            <h3>Packets</h3>
+            <p>For the shopkeeper NPC, I had to spawn a fake player using packets, and display it to every player. When re-logging or restarting the game the packets had to be resent, so I created the <a href="https://github.com/Gameoholic/LumberGame/blob/main/src/main/java/xyz/gameoholic/lumbergame/game/player/npc/PlayerNPCManager.java" rel="noopener noreferrer" target="_blank">PlayerNPCManager</a> class that would handle all of that for me.<br>To indicate the tree's health, "block cracks" are displayed on the tree. This required sending block destruction packets to the player, as well as updating them whenever the tree's health changed, and handling edge cases.</p>
   
             <h3>Other</h3>
             <p>The plugin uses my <a href="/projects/partigon.html" rel="noopener noreferrer" target="_blank">Partigon</a> library to create the particle animations seen in this plugin.<br>I used the <a href="https://www.spigotmc.org/resources/fastasyncworldedit.13932/" rel="noopener noreferrer" target="_blank">FAWE API</a> to update the tree with a schematic upon levelling it up.</p>
