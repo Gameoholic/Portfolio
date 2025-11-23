@@ -80,12 +80,6 @@ $(document).ready(function () {
   });
 });
 
-var video = document.getElementById("about-video");
-video.addEventListener("dblclick", function (event) {
-  handleVideoDoubleClick(event);
-});
-video.removeAttribute("controls");
-
 function handleVideoDoubleClick(event) {
   video.requestFullscreen();
 }
